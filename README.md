@@ -54,4 +54,4 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ---
 Dikembangkan dengan ❤️ oleh Putu Wiadnyana
-#TIDAK BOLEH DIGUNAKAN UNTUK DIJUALBELIKAN
+## TIDAK BOLEH DIGUNAKAN UNTUK DIJUALBELIKAN

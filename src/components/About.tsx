@@ -23,7 +23,7 @@ export default function About() {
                   learning and improving my skills to stay up-to-date with the latest technologies and trends.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  When I'm not coding, you can find me a Video Editor, reading books, or computer enthusiast.
+                  Besides coding, I also interested in Video Editing, Reading Books, and Computers in General
                 </p>
               </div>
             </div>

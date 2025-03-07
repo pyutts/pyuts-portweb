@@ -5,26 +5,29 @@ export default function Projects() {
     {
       title: "E-commerce Website - Bantenplace",
       description: "A modern e-commerce platform built with Codeignitter 4 and Bootstrap 5",
-      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
+      image: "../images/banten-web.png",
       tags: ["Codeignitter", "Bootstrap", "Xendit API"],
+      linkgithub: "https://github.com/pyutts/bantenplace-appweb",
     },
     {
       title: "Cooperative System - SIKOPER",
       description: "Aplication to manage cooperative system built with JavaFX and SQLite",
-      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
+      image: "../images/sikoper-app.png",
       tags: ["Windows", "JavaFX", "SQLite"],
+      linkgithub: "https://github.com/pyutts/Sikoper-App",
     },
     {
       title: "Digsoft Website",
       description: "A modern website for Digsoft company built with Interia.js, Laravel and Tailwind CSS",
-      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
+      image: "../images/digsoft-web.png",
       tags: ["React", "Tailwind CSS", "API Integration"],
     },
     {
       title: "Wedding Website - Chrisna & Wini",
       description: "A modern wedding website with comment message built with Next.js, React.js Tailwind CSS and MySQL",
-      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
-      tags: ["React", "Tailwind CSS", "API Integration"],
+      image: "../images/wedding-web.png",
+      tags: ["React", "Tailwind CSS", "Next js"],
+      linkweb: "https://krisnadanwinitesst.vercel.app/",
     }
   ]
 
@@ -42,7 +45,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
-              key={index}
+              key={index} 
               className="backdrop-blur-lg bg-white/30 dark:bg-gray-800/30 rounded-2xl overflow-hidden shadow-lg border border-gray-200/50 dark:border-gray-700/50 group transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
               <div className="relative overflow-hidden">
@@ -55,13 +58,15 @@ export default function Projects() {
                   <div className="p-4 w-full">
                     <div className="flex gap-2 justify-end">
                       <a
-                        href="#"
+                        href={project.linkgithub}
+                        target="_blank"
                         className="p-2 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition-colors duration-300"
                       >
                         <Github size={18} />
                       </a>
                       <a
-                        href="#"
+                        href={project.linkweb}
+                        target="_blank"
                         className="p-2 rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/40 transition-colors duration-300"
                       >
                         <ExternalLink size={18} />

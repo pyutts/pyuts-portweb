@@ -1,11 +1,12 @@
 export default function Skills() {
     const technicalSkills = [
       { name: "React", percentage: 90 },
-      { name: "Tailwind CSS", percentage: 85 },
-      { name: "JavaScript", percentage: 90 },
+      { name: "Tailwind CSS", percentage: 90 },
+      { name: "JavaScript", percentage: 85 },
       { name: "TypeScript", percentage: 80 },
       { name: "HTML/CSS", percentage: 95 },
-      { name: "Redux", percentage: 85 },
+      { name: "Laravel", percentage: 75 },
+      { name: "Bootstrap", percentage: 80 },
     ]
   
     return (
@@ -54,15 +55,11 @@ export default function Skills() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    Bootstrap CSS
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
                     Tailwind CSS
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    TypeScript
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    Redux
                   </li>
                 </ul>
               </div>
@@ -72,23 +69,19 @@ export default function Skills() {
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    Node.js
+                    CodeIgniter
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    Express
+                    Laravel
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    MongoDB
+                    MySQL/SQLite
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    Firebase
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    REST APIs
+                    Next.js
                   </li>
                 </ul>
               </div>
@@ -114,7 +107,7 @@ export default function Skills() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                    Chrome DevTools
+                    Composer
                   </li>
                 </ul>
               </div>

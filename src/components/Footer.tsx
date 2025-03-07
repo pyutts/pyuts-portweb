@@ -21,7 +21,7 @@ export default function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="http://linkedin.com/in/putuwiadnyana"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-300"

@@ -68,7 +68,7 @@ export default function Contact() {
                     <Github size={20} />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="http://linkedin.com/in/putuwiadnyana"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-full text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
@@ -76,7 +76,8 @@ export default function Contact() {
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="#"
+                    target="_blank"
+                    href="https://www.instagram.com/pyutsajabang"
                     className="p-3 bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-full text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                   >
                     <svg

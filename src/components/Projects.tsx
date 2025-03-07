@@ -3,41 +3,29 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "E-commerce Website",
-      description: "A modern e-commerce platform built with React and Tailwind CSS",
-      image: "/placeholder.svg?height=300&width=400",
-      tags: ["React", "Tailwind CSS", "Redux"],
+      title: "E-commerce Website - Bantenplace",
+      description: "A modern e-commerce platform built with Codeignitter 4 and Bootstrap 5",
+      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
+      tags: ["Codeignitter", "Bootstrap", "Xendit API"],
     },
     {
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for developers and designers",
-      image: "/placeholder.svg?height=300&width=400",
-      tags: ["React", "Tailwind CSS", "Framer Motion"],
+      title: "Cooperative System - SIKOPER",
+      description: "Aplication to manage cooperative system built with JavaFX and SQLite",
+      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
+      tags: ["Windows", "JavaFX", "SQLite"],
     },
     {
-      title: "Task Management App",
-      description: "A productivity app to manage tasks and projects efficiently",
-      image: "/placeholder.svg?height=300&width=400",
-      tags: ["React", "Tailwind CSS", "Firebase"],
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A weather application with beautiful visualizations",
-      image: "/placeholder.svg?height=300&width=400",
+      title: "Digsoft Website",
+      description: "A modern website for Digsoft company built with Interia.js, Laravel and Tailwind CSS",
+      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
       tags: ["React", "Tailwind CSS", "API Integration"],
     },
     {
-      title: "Recipe Finder",
-      description: "An app to discover and save your favorite recipes",
-      image: "/placeholder.svg?height=300&width=400",
-      tags: ["React", "Tailwind CSS", "Context API"],
-    },
-    {
-      title: "Fitness Tracker",
-      description: "Track your workouts and monitor your fitness progress",
-      image: "/placeholder.svg?height=300&width=400",
-      tags: ["React", "Tailwind CSS", "Chart.js"],
-    },
+      title: "Wedding Website - Chrisna & Wini",
+      description: "A modern wedding website with comment message built with Next.js, React.js Tailwind CSS and MySQL",
+      image: "https://wrapmarketusercontent.com/assets/items/thumb/54c1ab5a1d4b74c01e67e79b93ae1773805969726322be56c88e11c6bfec7d79.webp?v=1716120036",
+      tags: ["React", "Tailwind CSS", "API Integration"],
+    }
   ]
 
   return (
@@ -51,7 +39,7 @@ export default function Projects() {
           <div className="mt-2 w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -61,7 +49,7 @@ export default function Projects() {
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-100 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 w-full">
@@ -82,7 +70,7 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-12">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">

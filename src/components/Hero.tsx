@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react"
 import ThemeToggle from "./ThemeToggle"
-import GitHubProfile from "./GithubProfile"
 import AnimatedProfilePicture from "./AnimateProfilePicture"
 
 interface HeroProps {
@@ -20,13 +19,11 @@ export default function Hero({ darkMode, setDarkMode }: HeroProps) {
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               <span className="block text-gray-900 dark:text-white">Hello, I'm</span>
-              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 animate-gradient">
-                John Doe
-              </span>
+              <span className="block mt-2 text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">Putu Wiadnyana</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
               A passionate{" "}
-              <span className="font-semibold text-purple-600 dark:text-purple-400">Frontend Developer</span> creating
+              <span className="font-semibold text-purple-600 dark:text-purple-400">Web & Moblie Developer</span> creating
               modern and responsive web applications
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
@@ -68,7 +65,7 @@ export default function Hero({ darkMode, setDarkMode }: HeroProps) {
               </a>
             </div>
 
-            <GitHubProfile />
+           
           </div>
           <div className="md:w-1/2 flex justify-center">
             <AnimatedProfilePicture />
@@ -76,23 +73,7 @@ export default function Hero({ darkMode, setDarkMode }: HeroProps) {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#about" className="text-gray-500 dark:text-gray-400">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
-          </svg>
-        </a>
-      </div>
+      
     </section>
   )
 }

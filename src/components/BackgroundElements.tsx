@@ -48,7 +48,7 @@ export default function BackgroundElements() {
           </svg>
   
           {/* Geometric patterns with increased transparency */}
-          <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2">
+          {/* <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2">
             <svg className="w-full h-full opacity-3" viewBox="0 0 100 100">
               <defs>
                 <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
@@ -63,7 +63,7 @@ export default function BackgroundElements() {
               </defs>
               <rect width="100" height="100" fill="url(#grid)" />
             </svg>
-          </div>
+          </div> */}
   
           {/* Subtle wave pattern with increased transparency */}
           <div className="absolute bottom-0 left-0 w-full h-1/3 opacity-5">

@@ -36,7 +36,7 @@ export default function AnimatedProfilePicture() {
         } ${animationComplete ? "animate-float" : ""}`}
       >
         <img
-          src="https://images.unsplash.com/photo-1612831285584-3b7e6c1f8a1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDUwMDZ8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjE1NzY2NjEz&ixlib=rb-1.2.1&q=80&w=400"
+          src="https://avatars.githubusercontent.com/u/141645613?v=4"
           alt="Profile"
           className="w-full h-full object-cover"
         />

@@ -27,7 +27,7 @@ export default function GitHubProfile() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setProfile({
-        avatar_url: "/placeholder.svg?height=100&width=100",
+        avatar_url: "https://avatars.githubusercontent.com/u/141645613?v=4",
         name: "John Doe",
         login: "johndoe",
         bio: "Frontend Developer & UI/UX Enthusiast",

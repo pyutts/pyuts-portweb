@@ -1,7 +1,4 @@
 # Putu Wiadnyana - Portfolio Website
-
-![Portfolio Preview](./screenshot.png)
-
 Website portfolio pribadi untuk Putu Wiadnyana, dibangun dengan teknologi modern seperti Vite.js, React, dan Tailwind CSS untuk pengalaman yang cepat dan responsif.
 
 ## 🚀 Teknologi yang Digunakan

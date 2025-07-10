@@ -7,7 +7,6 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import BackgroundElement from "./components/BackgroundElements"
 import ProjectModal from "./components/ProjectsModal"
-import MyWorks from "./components/MyWorks"
 
 export type Project = {
   title: string

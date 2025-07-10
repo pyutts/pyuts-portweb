@@ -22,8 +22,6 @@ export default function GitHubProfile() {
   })
   const [loading, setLoading] = useState(true)
 
-  // In a real app, you would fetch this data from GitHub API
-  // For demo purposes, we'll simulate loading data
   useEffect(() => {
     const timer = setTimeout(() => {
       setProfile({

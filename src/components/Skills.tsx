@@ -1,147 +1,68 @@
+
+import { FaReact, FaBootstrap, FaLaravel, FaGithub, FaFigma} from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { SiTailwindcss, SiCodeigniter, SiMysql, SiNextdotjs, SiNpm, SiComposer, SiJavascript } from "react-icons/si";
+import { MdOutlinePeople, MdAccessTime, MdTipsAndUpdates, MdHandshake, MdQuestionAnswer } from "react-icons/md";
+
 export default function Skills() {
-    const technicalSkills = [
-      { name: "React", percentage: 90 },
-      { name: "Tailwind CSS", percentage: 90 },
-      { name: "JavaScript", percentage: 85 },
-      { name: "TypeScript", percentage: 80 },
-      { name: "HTML/CSS", percentage: 95 },
-      { name: "Laravel", percentage: 75 },
-      { name: "Bootstrap", percentage: 80 },
-    ]
-  
-    return (
-      <section id="skills" className="py-20 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-              My{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">Skills</span>
-            </h2>
-            <div className="mt-2 w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto rounded-full"></div>
-          </div>
-  
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-8 rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Technical Skills</h3>
-              <div className="space-y-6">
-                {technicalSkills.map((skill, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-gray-700 dark:text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-gray-600 dark:text-gray-400">{skill.percentage}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200/70 dark:bg-gray-700/70 rounded-full h-2.5">
-                      <div
-                        className="bg-gradient-to-r from-purple-600 to-blue-500 h-2.5 rounded-full animate-grow-width"
-                        style={{ width: `${skill.percentage}%`, animationDelay: `${index * 0.2}s` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-  
-            <div className="grid grid-cols-2 gap-6">
-              <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Frontend</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    React
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    JavaScript
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    Bootstrap CSS
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    Tailwind CSS
-                  </li>
-                </ul>
-              </div>
-  
-              <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Backend</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    CodeIgniter
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    Laravel
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    MySQL/SQLite
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    Next.js
-                  </li>
-                </ul>
-              </div>
-  
-              <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Tools</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                    Git & GitHub
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                    VS Code
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                    Figma
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                    npm/yarn
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                    Composer
-                  </li>
-                </ul>
-              </div>
-  
-              <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Soft Skills</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Communication
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Problem Solving
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Teamwork
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Time Management
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Adaptability
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  return (
+    <section id="skills" className="py-20 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            My{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
+              Skills
+            </span>
+          </h2>
+          <div className="mt-2 w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto rounded-full"></div>
         </div>
-      </section>
-    )
-  }
-  
-  
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Frontend</h3>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <li className="flex items-center gap-2"><FaReact className="text-purple-500" /> React</li>
+              <li className="flex items-center gap-2"><SiJavascript className="text-yellow-500" /> JavaScript</li>
+              <li className="flex items-center gap-2"><FaBootstrap className="text-purple-700" /> Bootstrap CSS</li>
+              <li className="flex items-center gap-2"><SiTailwindcss className="text-cyan-500" /> Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Backend</h3>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <li className="flex items-center gap-2"><SiCodeigniter className="text-orange-500" /> CodeIgniter</li>
+              <li className="flex items-center gap-2"><FaLaravel className="text-red-600" /> Laravel</li>
+              <li className="flex items-center gap-2"><SiMysql className="text-blue-500" /> MySQL / SQLite</li>
+              <li className="flex items-center gap-2"><SiNextdotjs className="text-black dark:text-white" /> Next.js</li>
+            </ul>
+          </div>
+
+          <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Tools</h3>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <li className="flex items-center gap-2"><FaGithub className="text-gray-800 dark:text-gray-100" /> Git & GitHub</li>
+              <li className="flex items-center gap-2"><FaCode className="text-blue-500" /> VS Code</li>
+              <li className="flex items-center gap-2"><FaFigma className="text-pink-500" /> Figma</li>
+              <li className="flex items-center gap-2"><SiNpm className="text-red-500" /> npm / yarn</li>
+              <li className="flex items-center gap-2"><SiComposer className="text-indigo-500" /> Composer</li>
+            </ul>
+          </div>
+
+          <div className="backdrop-blur-lg bg-white/20 dark:bg-gray-800/20 p-6 rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transform transition-all duration-500 hover:scale-105">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Soft Skills</h3>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <li className="flex items-center gap-2"><MdQuestionAnswer className="text-green-500" /> Communication</li>
+              <li className="flex items-center gap-2"><MdTipsAndUpdates className="text-green-500" /> Problem Solving</li>
+              <li className="flex items-center gap-2"><MdHandshake className="text-green-500" /> Teamwork</li>
+              <li className="flex items-center gap-2"><MdAccessTime className="text-green-500" /> Time Management</li>
+              <li className="flex items-center gap-2"><MdOutlinePeople className="text-green-500" /> Adaptability</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}

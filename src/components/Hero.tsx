@@ -23,15 +23,15 @@ export default function Hero({ darkMode, setDarkMode }: HeroProps) {
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
               A passionate{" "}
-              <span className="font-semibold text-purple-600 dark:text-purple-400">Web & Moblie Developer</span> creating
+              <span className="font-semibold text-purple-600 dark:text-purple-400">Web Developer</span> creating
               modern and responsive web applications
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
               <a
-                href="#contact"
+                href="#"
                 className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                Contact Me
+                Download CV
               </a>
               <a
                 href="#projects"
@@ -72,8 +72,6 @@ export default function Hero({ darkMode, setDarkMode }: HeroProps) {
           </div>
         </div>
       </div>
-
-      
     </section>
   )
 }

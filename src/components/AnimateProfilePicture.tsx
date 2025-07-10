@@ -5,11 +5,8 @@ export default function AnimatedProfilePicture() {
   const [animationComplete, setAnimationComplete] = useState(false)
 
   useEffect(() => {
-    // Start with emoji, then transition to profile picture
     const timer = setTimeout(() => {
       setShowEmoji(false)
-
-      // After transition is complete
       setTimeout(() => {
         setAnimationComplete(true)
       }, 1000)

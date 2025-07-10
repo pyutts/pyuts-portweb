@@ -73,7 +73,6 @@ function App() {
         <Footer />
       </div>
 
-      {/* Modal di atas segalanya */}
       {selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeProjectModal} />
       )}

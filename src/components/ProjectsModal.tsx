@@ -47,7 +47,6 @@ export default function ProjectModal({ project, onClose }: Props) {
 
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Tombol Close */}
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 z-10 text-gray-400 hover:text-gray-700 dark:hover:text-white"
@@ -56,7 +55,6 @@ export default function ProjectModal({ project, onClose }: Props) {
           <X size={24} />
         </button>
 
-        {/* Gambar */}
         <div className="w-full aspect-video">
           <img
             src={project.image}
@@ -65,7 +63,6 @@ export default function ProjectModal({ project, onClose }: Props) {
           />
         </div>
 
-        {/* Konten */}
         <div className="p-6 md:p-8">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3">
             {project.title}

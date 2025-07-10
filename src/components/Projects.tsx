@@ -1,5 +1,5 @@
 import { Github, ExternalLink } from "lucide-react"
-import { Project } from "../App" // Pastikan path sesuai jika `Project` didefinisikan di App.tsx
+import { Project } from "../App" 
 
 type ProjectsProps = {
   onProjectSelect: (project: Project) => void

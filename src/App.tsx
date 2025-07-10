@@ -7,6 +7,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import BackgroundElement from "./components/BackgroundElements"
 import ProjectModal from "./components/ProjectsModal"
+import MyWorks from "./components/MyWorks"
 
 export type Project = {
   title: string
@@ -21,7 +22,6 @@ function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false)
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
-  // Cek tema dari localStorage atau system preference
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme")
     if (savedTheme) {
@@ -36,7 +36,6 @@ function App() {
     }
   }, [])
 
-  // Terapkan tema ke document
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode)
     localStorage.setItem("theme", darkMode ? "dark" : "light")
@@ -53,7 +52,6 @@ function App() {
     <div className="relative min-h-screen bg-gradient-to-br from-white/80 to-gray-100/80 dark:from-gray-900/80 dark:to-black/80 transition-colors duration-500 overflow-x-hidden">
       <BackgroundElement />
 
-      {/* Semua konten tetap terlihat (hanya diblur jika modal terbuka) */}
       <div
         className={`transition-all duration-300 ease-in-out ${
           selectedProject
@@ -64,7 +62,7 @@ function App() {
         <main>
           <Hero darkMode={darkMode} setDarkMode={setDarkMode} />
           <About />
-          {/* <MyWorks /> */}
+          <MyWorks />
           <Projects onProjectSelect={openProjectModal} />
           <Skills />
           <Contact />

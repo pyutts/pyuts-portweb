@@ -14,7 +14,7 @@ export default function About() {
               <div className="backdrop-blur-lg bg-white/30 dark:bg-gray-800/30 p-6 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 transform transition-all duration-500 hover:scale-105">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Who am I?</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  I'm a passionate Web & Moblie Developer with 1 years of experience in building modern web applications. I
+                  I'm a passionate Web Developer with 1 years of experience in building modern web applications. I
                   specialize in React, Tailwind CSS, and Laravel to create beautiful, responsive, and user-friendly
                   interfaces.
                 </p>
@@ -32,7 +32,7 @@ export default function About() {
               <div className="backdrop-blur-lg bg-white/30 dark:bg-gray-800/30 p-6 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 transform transition-all duration-500 hover:scale-105">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Education</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Diploma, Bali State Polytechnic, Informatic's Management, 2023 - 2026
+                  Associate Degree, Bali State Polytechnic, Informatic's Management, 2023 - Present
                 </p>
               </div>
               <div className="backdrop-blur-lg bg-white/30 dark:bg-gray-800/30 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 transform transition-all duration-500 hover:scale-105">

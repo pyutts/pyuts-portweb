@@ -41,13 +41,15 @@ export default function Hero({ darkMode, setDarkMode }: HeroProps) {
               </button>
 
               <button
+                type="button"
                 onClick={() => {
                   document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="px-6 py-3 rounded-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm text-gray-900 dark:text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 dark:border-gray-700/50"
+                className="px-6 py-3 rounded-full bg-white/70 dark:bg-gray-800/90 text-gray-900 dark:text-white font-medium shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-1 border border-gray-200/50 dark:border-gray-700/50 [will-change:transform]"
               >
                 View Work
               </button>
+
 
             </div>
 
